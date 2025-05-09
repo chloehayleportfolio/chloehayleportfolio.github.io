@@ -3,41 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Chloe Hayle | Creative Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="loader">
+        <div class="loader-content">
+            <h2>CHLOE HAYLE</h2>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
     <header>
-        <h1>My Name</h1>
-        <p>Web Developer | Designer | Creator</p>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">CHLOE HAYLE</a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">All Projects</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate web developer with experience in HTML, CSS, and JavaScript.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="#">GitHub Profile</a></p>
-    </section>
-    
+
+    <main>
+        <section class="hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="images/hero-background.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-content">
+                <h1 class="reveal-text">Creative Excellence</h1>
+                <p class="reveal-text delay-1">Crafting digital experiences with precision and elegance</p>
+                <div class="button-container reveal-text delay-2">
+                    <a href="projects.html" class="cta-button">Explore Portfolio</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="about-preview-container">
+                <div class="about-preview-image reveal-on-scroll">
+                    <img src="images/about-preview.jpg" alt="Chloe Hayle">
+                </div>
+                <div class="about-preview-content">
+                    <h2 class="section-title reveal-on-scroll">About Me</h2>
+                    <p class="reveal-on-scroll delay-1">I'm a creative professional specializing in crafting elegant digital experiences that combine aesthetic beauty with functional excellence.</p>
+                    <p class="reveal-on-scroll delay-2">With a passion for design and attention to detail, I create work that stands out through its sophistication and thoughtful execution.</p>
+                    <div class="button-container reveal-on-scroll delay-3">
+                        <a href="about.html" class="text-link">Learn more about my approach <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <div class="section-header">
+                <h2 class="section-title reveal-on-scroll">Featured Projects</h2>
+                <p class="section-subtitle reveal-on-scroll delay-1">A selection of my finest work</p>
+            </div>
+            
+            <div class="project-showcase">
+                <div class="project-item large reveal-on-scroll">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Luxury Project 1">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Elegant Website Design</h3>
+                                <p>Web Design / UX / Development</p>
+                                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-grid">
+                    <div class="project-item reveal-on-scroll delay-1">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Luxury Project 2">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>Brand Identity</h3>
+                                    <p>Branding / Design</p>
+                                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item reveal-on-scroll delay-2">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Luxury Project 3">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>Mobile Application</h3>
+                                    <p>UI/UX / Development</p>
+                                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item reveal-on-scroll delay-3">
+                        <div class="project-image">
+                            <img src="images/project4.jpg" alt="Luxury Project 4">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>E-commerce Platform</h3>
+                                    <p>Web Design / Development</p>
+                                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="button-container text-center reveal-on-scroll">
+                    <a href="projects.html" class="outline-button">View All Projects</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <div class="testimonials-container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-on-scroll">Client Testimonials</h2>
+                    <p class="section-subtitle reveal-on-scroll delay-1">What clients say about my work</p>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"Chloe's attention to detail and elegant design sensibility transformed our brand. The result exceeded all our expectations."</p>
+                            <div class="testimonial-author">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, Luxury Brand</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"Working with Chloe was a seamless experience. Her ability to understand our vision and elevate it is truly remarkable."</p>
+                            <div class="testimonial-author">
+                                <h4>Michael Chen</h4>
+                                <p>Creative Director, Design Studio</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"The sophistication and functionality of our new website has significantly improved our customer engagement and brand perception."</p>
+                            <div class="testimonial-author">
+                                <h4>Emma Roberts</h4>
+                                <p>Marketing Manager, Premium Services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-arrow-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-preview">
+            <div class="contact-preview-container">
+                <div class="contact-preview-content reveal-on-scroll">
+                    <h2 class="section-title">Let's Create Something Exceptional</h2>
+                    <p>Ready to elevate your digital presence with sophisticated design?</p>
+                    <div class="button-container">
+                        <a href="contact.html" class="cta-button">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <h3>CHLOE HAYLE</h3>
+                    <p>Creative Professional</p>
+                    <p class="footer-contact">
+                        <a href="mailto:contact@chloehayle.com">contact@chloehayle.com</a><br>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">All Projects</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Chloe Hayle. All Rights Reserved.</p>
+                <p class="footer-legal">
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
