@@ -1,7 +1,5 @@
 /* Reset and Base Styles */
-*,
-*::before,
-*::after {
+*,*::before,*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -148,7 +146,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: rgba(249, 249, 249, 0.95);
+    background-color: transparent;
     transition: all var(--transition-medium);
 }
 
@@ -175,6 +173,7 @@ header.header-hidden {
     font-weight: 500;
     letter-spacing: 1px;
     color: var(--color-black);
+    opacity: 0;
 }
 
 /* Horizontal Menu */
@@ -247,6 +246,7 @@ header.header-hidden {
     justify-content: center;
     text-align: center;
     padding: 0 5%;
+    margin-top: 0;
 }
 
 .hero-background {
@@ -270,13 +270,13 @@ header.header-hidden {
 
 .hero-video {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     object-fit: cover;
 }
 
@@ -566,6 +566,5 @@ header.header-hidden {
     transition: all 0.3s ease;
 }
 
-.outline-button:hover {
 
 
